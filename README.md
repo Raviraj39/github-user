@@ -1,8 +1,31 @@
-# React + Vite
+# GitHub User Info App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that fetches and displays public information about GitHub users.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Users can enter a GitHub username.
+- Upon submission, the application fetches the user's public information from the GitHub API.
+- It displays the user's avatar image, username, name (if available), number of public repositories, number of public gists, and the date the profile was created.
+- If the entered username is invalid or if there is an error while fetching data, appropriate error messages are displayed.
+
+## Technologies Used
+
+- React.js
+- Axios
+- CSS (for styling)
+
+## How to Use
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
+5. Open your web browser and go to `http://localhost:3000`.
+6. Enter a GitHub username in the input field and click "Get Info" to see the user's public information.
+
+## Credits
+
+This project was created by Raviraj Bujawade.
+
+
