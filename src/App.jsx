@@ -43,7 +43,7 @@ const [username, setUsername] = useState('');
         </form>
         {error && <p className="error text-white">{error}</p>}
         {userInfo && (
-          <div className="card mt-5">
+          <div className="card mt-5 w-auto h-auto">
             <div class="d-flex align-items-center justify-content-between border-bottom m-3 p-2">
             <h2><i class="bi bi-github"></i></h2>
             <h2>GitHub</h2>
@@ -53,7 +53,7 @@ const [username, setUsername] = useState('');
           </div>
           
           <div>
-            <img src={userInfo.avatar_url} alt="Avatar" class="rounded-circle "  />
+            <img src={userInfo.avatar_url} alt="Avatar" class="rounded-circle img-fluid "  />
             <p><strong>Username:</strong> {userInfo.login}</p>
             <p><strong>Name:</strong> {userInfo.name || 'N/A'}</p>
             <p><strong>No. of Public Repos:</strong> {userInfo.public_repos}</p>
